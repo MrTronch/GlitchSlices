@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {cover,pointOnStage,DwellSelector} from '../src/geometry.js';
+test('cover mantiene proporciones y calcula el recorte',()=>{const t=cover(1280,720,390,700);assert.equal(t.scale,700/720);assert(t.x<0);assert.equal(t.y,0);});
+test('puntero usa el mismo recorte que el video, incluso al grabar en otra orientación',()=>{const p=pointOnStage({x:.5,y:.5},{width:1280,height:720},{left:14,top:61,width:362,height:664});assert.equal(p.x,195);assert.equal(p.y,393);});
+test('900 ms de permanencia, sin repetir y rearmado al salir del objetivo',()=>{const d=new DwellSelector();assert.equal(d.update(1,0),null);assert.equal(d.update(1,899),null);assert.equal(d.update(1,900),1);assert.equal(d.update(1,2000),null);assert.equal(d.update(2,2100),null);assert.equal(d.update(2,3000),2);assert.equal(d.update(null,3100),null);assert.equal(d.update(2,3200),null);assert.equal(d.update(2,4100),2);});

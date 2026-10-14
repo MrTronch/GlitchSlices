@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#f0ff32"><meta name="description" content="GLITCH SLICES — cámara y diez composiciones visuales en tiempo real. BY MR TRONCH."><title>GLITCH SLICES — MR TRONCH</title><link rel="stylesheet" href="styles.css"><link rel="icon" href="assets/favicon.svg" type="image/svg+xml"></head>
+<body>
+<main id="app">
+ <header class="masthead"><div class="identity"><h1 class="glitch-title" data-text="GLITCH SLICES">GLITCH SLICES</h1></div><span class="signature">BY MR TRONCH</span></header>
+ <section class="stage" id="stage" aria-label="Cámara con efectos">
+  <canvas id="output" width="1280" height="720" aria-label="Imagen procesada en vivo"></canvas>
+  <div id="welcome" class="welcome"><div class="welcome-content"><span class="eyebrow">IMAGE / MOVEMENT / PLAY</span><h2>YOUR FACE.<br>A NEW REALITY.</h2><button id="start" class="start-button">ACTIVAR CÁMARA <span aria-hidden="true">↗</span></button><p id="status" role="status">PERMITE EL ACCESO A LA CÁMARA PARA EMPEZAR.</p></div><span class="welcome-index" aria-hidden="true">01—10</span></div>
+  <nav class="effects" id="effects" aria-label="Seleccionar efecto"></nav>
+  <button id="exit" class="exit" aria-label="Salir de pantalla completa" hidden>↙</button>
+  <div id="pointer" class="hand-pointer" hidden aria-hidden="true"></div>
+  <div id="toast" class="toast" role="status" hidden></div>
+ </section>
+ <footer class="toolbar"><div class="tools"><button id="camera" class="tool" aria-label="Elegir cámara" title="CÁMARA"></button><button id="record" class="record-button" aria-label="Grabar video" disabled title="GRABAR"><span class="record-dot"></span></button><button id="options-button" class="tool" aria-label="Mostrar opciones" aria-expanded="false" title="OPCIONES"></button><button id="fullscreen" class="tool" aria-label="Pantalla completa" title="PANTALLA COMPLETA"></button></div><span id="record-time" class="record-time" hidden aria-live="off">00:00</span></footer>
+ <section id="options" class="options" aria-label="Opciones" hidden><div class="option-toggles"><label>AUTO <input type="checkbox" id="auto" role="switch"><span></span></label><label>ESPEJO <input type="checkbox" id="mirror" role="switch" checked><span></span></label><label>GESTOS <input type="checkbox" id="gestures" role="switch"><span></span></label></div><label class="auto-interval">INTERVALO AUTO <input id="auto-seconds" type="range" min="4" max="12" step="1" value="8" aria-label="Segundos entre efectos automáticos"><output id="auto-value">8 S</output></label></section>
+ <section class="project-description" aria-label="Sobre Glitch Slices"><p>Una cámara, un rostro y diez formas de alterar la imagen. GLITCH SLICES transforma el movimiento en recortes, repeticiones y desplazamientos: los ojos se multiplican, las facciones cambian de lugar y cada gesto modifica el retrato. La pantalla funciona como un espejo inestable, donde la cara deja de ocupar su sitio habitual y se convierte en material para experimentar.</p><p>¡Prende la cámara y prueba los efectos!</p></section>
+ <dialog id="camera-dialog"><form method="dialog"><div class="dialog-head"><h2>CÁMARA</h2><button aria-label="Cerrar selector de cámara">×</button></div><label for="device">DISPOSITIVO</label><select id="device"></select><button id="use-camera" type="button" class="start-button">USAR CÁMARA</button><p>LA GRABACIÓN ACTIVA SE FINALIZA AL CAMBIAR DE CÁMARA.</p></form></dialog>
+ <div id="intro" class="intro" hidden><img id="intro-logo" alt="MR TRONCH"></div>
+</main><video id="video" autoplay muted playsinline hidden></video><script type="module" src="src/app.js"></script>
+</body></html>
