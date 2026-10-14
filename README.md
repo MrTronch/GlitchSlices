@@ -73,3 +73,6 @@ Consulta `docs/VALIDACION.md` para las pruebas del navegador y límites pendient
 
 MediaPipe y sus modelos conservan sus licencias originales. La licencia de distribución del código artístico queda a elección del autor; no se añade una licencia abierta sin su decisión.
 
+
+FILTRO opcional: color más intenso y grano suave, incluido en el video grabado. Activado por defecto solo en móvil; desactivado al iniciar en escritorio. Perfil móvil: captura preferida 640x480, procesamiento máximo 640 px por lado según orientación; cristal calculado a menor resolución. Gestos disponibles en móvil y escritorio.
+

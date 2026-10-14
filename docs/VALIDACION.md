@@ -48,3 +48,5 @@ Modos 2/3: geometría entera del Python a escala de referencia 1280 px, centrado
 Ajuste posterior: cuerpo modos 2/3 con hasta seis franjas más altas; ancho del cuerpo reducido al 72% y 65% respectivamente. Cara intacta. Cuadros del pecho modo 1 al 72% del tamaño previo. La comparación literal con Python anterior describe la revisión previa; estos ajustes artísticos son posteriores.
 
 Revisión: ancho progresivo suave del cuerpo modo 2; frente/ojos más anchos. Inicio del cuerpo por debajo de los puntos de boca para evitar recorte parcial; cuello/hombros del modo 3 más estrechos. Glitch del título 1.1 segundos negro/amarillo. Validación navegador local aprobada. iPhone/Android físicos pendientes, no se garantiza rendimiento idéntico.
+
+Optimización móvil y FILTRO: pruebas desktop con cámara simulada, diez modos, giro durante grabación y video descargado aprobadas sin errores. Se añadió compatibilidad del color para navegadores sin Canvas filter. Pendiente medición en teléfonos físicos.
