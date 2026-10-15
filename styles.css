@@ -16,3 +16,5 @@
 .project-description{max-width:850px;margin:24px auto 12px;font-size:13px;line-height:1.75;letter-spacing:.015em;text-transform:uppercase}.project-description p{margin:0 0 14px}.project-description p:last-child{font-weight:700}.immersive .project-description{display:none}@media(max-width:768px){.project-description{margin-top:20px;font-size:12px;line-height:1.7}}
 
 .project-description p:last-child{font-family:Arial,Helvetica,sans-serif;font-size:clamp(20px,2.6vw,32px);font-weight:900;letter-spacing:.045em;line-height:1.05;margin-top:22px}@media(max-width:768px){.project-description p:last-child{font-size:clamp(19px,4.8vw,26px);letter-spacing:.025em}}
+
+@font-face{font-family:'Glitch Display';src:url('./assets/fonts/ArchivoBlack-Regular.ttf') format('truetype');font-weight:900;font-style:normal;font-display:swap}.glitch-title,.project-description p:last-child{font-family:'Glitch Display',Arial,Helvetica,sans-serif;font-weight:900}

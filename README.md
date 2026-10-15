@@ -74,7 +74,9 @@ Consulta `docs/VALIDACION.md` para las pruebas del navegador y límites pendient
 MediaPipe y sus modelos conservan sus licencias originales. La licencia de distribución del código artístico queda a elección del autor; no se añade una licencia abierta sin su decisión.
 
 
-FILTRO opcional: color más intenso y grano suave, incluido en el video grabado. Activado por defecto solo en móvil; desactivado al iniciar en escritorio. Perfil móvil: captura preferida 640x480, procesamiento máximo 640 px por lado según orientación; cristal calculado a menor resolución. Gestos disponibles en móvil y escritorio.
+FILTRO opcional: color más intenso y grano suave, incluido en el video grabado. Desactivado por defecto en móvil y escritorio. Perfil móvil: captura preferida 640x480, procesamiento máximo 640 px por lado según orientación; cristal calculado a menor resolución. Gestos disponibles en móvil y escritorio.
 
 
 Orden actualizado: 1 PIRÁMIDE (antes 2), 2 INVERTIDO (antes 3), 3 MOSAICO (antes 1), y 4–10 sin cambios. Pirámide/invertido usan el rostro para colocar los recortes sin depender de pose corporal. Seguimiento suavizado y tolerancia breve a pérdidas de detección. Cristal con reflejos reutilizados y cálculo reducido.
+
+Revisión final: cuerpo detectado cuando está disponible, con respaldo basado en rostro. La pérdida de pose no desactiva el efecto. Fuente de títulos Archivo Black incluida localmente con licencia OFL, controles en Arial.

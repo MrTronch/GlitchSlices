@@ -3,7 +3,7 @@ import {cover,pointOnStage,DwellSelector} from './geometry.js';
 import {icons,effectIcons} from './icons.js';
 const $=id=>document.getElementById(id),video=$('video'),output=$('output'),stage=$('stage'),source=document.createElement('canvas'),input=source.getContext('2d');
 const mobile=matchMedia("(pointer:coarse)").matches;
-const state={filter:mobile,mode:1,autoSeconds:8,auto:false,mirror:true,gestures:false,stream:null,active:false,recording:false,facing:'user',vision:null,lastVision:0,nextMode:0,worker:null,workerReady:false,busy:false,lastInference:0,lastVideoTime:-1,frames:0,fps:0};
+const state={filter:false,mode:1,autoSeconds:8,auto:false,mirror:true,gestures:false,stream:null,active:false,recording:false,facing:'user',vision:null,lastVision:0,nextMode:0,worker:null,workerReady:false,busy:false,lastInference:0,lastVideoTime:-1,frames:0,fps:0};
 $('filter').checked=state.filter;
 const effectOrder=[2,3,1,4,5,6,7,8,9,10];
 const engine=new EffectsEngine(),dwell=new DwellSelector(900);let recorder=null,chunks=[],recordStart=0,recordShape=null,toastTimer,exitTimer,initPromise,lastTick=performance.now(),lockedBlobURL=null;
